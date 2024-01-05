@@ -96,8 +96,8 @@ generate_certs() {
 
 generate_secret() {
   kubectl -n cattle-system create secret tls tls-rancher-ingress \
-  --cert=/home/adrian/rancher.crt \
-  --key=/home/adrian/rancher.key
+  --cert=/home/sfadmin/rancher.crt \
+  --key=/home/sfadmin/rancher.key
 }
 
 generate_values() {
@@ -151,7 +151,7 @@ restrictedAdmin: false
 
 
 # Fully qualified name to reach your Rancher server
-hostname: rancher.local
+hostname: sfranch.webdiscode.com
 
 
 ## Optional array of imagePullSecrets containing private registry credentials
@@ -197,7 +197,7 @@ service:
 #         Use staging until you have your config right.
 
 letsEncrypt:
-  # email: none@example.com
+  email: eieicyl@gmail.com
   environment: production
   ingress:
     # options: traefik, nginx
@@ -211,7 +211,7 @@ privateCA: false
 # proxy: http://example.local:1080
 
 # comma separated list of domains or ip addresses that will not use the proxy
-noProxy: 127.0.0.0/8,10.42.0.0/16,10.43.0.0/16,192.168.0.1/24,10.10.0.0/24,rancher.local
+noProxy: 127.0.0.0/8,10.42.0.0/16,10.43.0.0/16,192.168.0.1/24,10.10.0.0/24,24.222.44.75,sfranch.webdiscode.com
 
 # Override rancher image location for Air Gap installs
 rancherImage: rancher/rancher
