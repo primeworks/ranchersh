@@ -67,7 +67,7 @@ EOF
 perform_cluster_check() {
   kubectl cluster-info
   kubectl get nodes
-  kubectl describe nodes rancher
+  kubectl describe nodes silverflow-rancher
   kubectl get pods -A
   kubectl get svc -A -o wide
 }
