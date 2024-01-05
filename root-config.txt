@@ -75,13 +75,13 @@ commonName                      = Common Name
 emailAddress                    = Email Address
 
 # Optionally, specify some defaults.
-countryName_default             = PL
-stateOrProvinceName_default     = Poland
-localityName_default            = Lodz
-0.organizationName_default      = Sysadmin
-organizationalUnitName_default  = Sysadmin Rancher
-commonName_default              = Sysadmin Root CA
-emailAddress_default            = admin@sysadmin.info.pl
+countryName_default             = CA
+stateOrProvinceName_default     = Prince Edward Island
+localityName_default            = Charlottetown
+0.organizationName_default      = Silverflow
+organizationalUnitName_default  = Silverflow Rancher
+commonName_default              = Silverflow Root CA
+emailAddress_default            = eieicyl@gmail.com
 
 [ v3_ca ]
 # Extensions for a typical CA (`man x509v3_config`).
