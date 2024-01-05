@@ -99,8 +99,8 @@ basicConstraints = critical, CA:true, pathlen:0
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 
 [alt_names]
-DNS.1   = rancher.local
-DNS.2   = www.rancher.local
+DNS.1   = sfranch.webdiscode.com
+DNS.2   = www.sfranch.webdiscode.com
 IP.1    = 10.10.0.120
 
 [ usr_cert ]
