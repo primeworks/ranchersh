@@ -75,13 +75,13 @@ commonName                      = Common Name
 emailAddress                    = Email Address
 
 # Optionally, specify some defaults.
-countryName_default             = PL
-stateOrProvinceName_default     = Poland
-localityName_default            = Lodz
-0.organizationName_default      = Sysadmin
-organizationalUnitName_default  = Sysadmin Rancher
-commonName_default              = Sysadmin Intermediate CA
-emailAddress_default            = admin@sysadmin.info.pl
+countryName_default             = CA
+stateOrProvinceName_default     = Prince Edward Island
+localityName_default            = Charlottetown
+0.organizationName_default      = Silverflow
+organizationalUnitName_default  = Silverflow Rancher
+commonName_default              = Silverflow Intermediate CA
+emailAddress_default            = eieicyl@gmail.com
 
 [ v3_ca ]
 # Extensions for a typical CA (`man x509v3_config`).
@@ -99,9 +99,9 @@ basicConstraints = critical, CA:true, pathlen:0
 keyUsage = critical, digitalSignature, cRLSign, keyCertSign
 
 [alt_names]
-DNS.1   = rancher.local
-DNS.2   = www.rancher.local
-IP.1    = 10.10.0.120
+DNS.1   = sfranch.webdiscode.com
+DNS.2   = www.sfranch.webdiscode.com
+IP.1    = 24.222.44.75
 
 [ usr_cert ]
 # Extensions for client certificates (`man x509v3_config`).
