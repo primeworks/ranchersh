@@ -90,7 +90,7 @@ EOF
 perform_cluster_check() {
   kubectl cluster-info
   kubectl get nodes
-  kubectl describe nodes rancher
+  kubectl describe nodes silverflow-rancher
   kubectl get pods -A
   kubectl get svc -A -o wide
 }
@@ -281,7 +281,7 @@ restrictedAdmin: false
 
 
 # Fully qualified name to reach your Rancher server
-hostname: rancher.local
+hostname: sfranch.webdiscode.com
 
 
 ## Optional array of imagePullSecrets containing private registry credentials
