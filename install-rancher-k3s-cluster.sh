@@ -187,9 +187,9 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 
 [ alt_names ]
-DNS.1 = rancher.local
-DNS.2 = www.rancher.local
-IP.1 = 10.10.0.123
+DNS.1 = sfranch.webdiscode.com
+DNS.2 = www.sfranch.webdiscode.com
+IP.1 = 24.222.44.75
 EOF
   openssl x509 -req -in /tmp/ca/intermediate/rancher-server.csr -CA /tmp/ca/intermediate/intermediate-ca.crt -CAkey /tmp/ca/intermediate/intermediate-ca.key -CAcreateserial -out /tmp/ca/intermediate/rancher-server.crt -days 365 -sha256 -extfile /tmp/ca/intermediate/v3.ext -extensions v3_req 
   
@@ -326,7 +326,7 @@ service:
 #         Use staging until you have your config right.
 
 letsEncrypt:
-  # email: none@example.com
+  email: eieicyl@gmail.com
   environment: production
   ingress:
     # options: traefik, nginx
